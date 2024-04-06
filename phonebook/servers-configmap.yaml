@@ -4,6 +4,6 @@ metadata:
     name: servers-configmap
     namespace: app
 data: 
-    MYSQL_DATABASE_HOST: mysql-service.default.svc.cluster.local
+    MYSQL_DATABASE_HOST: mysql-service.app.svc.cluster.local
     MYSQL_USER: fatih
     MYSQL_DATABASE: phonebook
