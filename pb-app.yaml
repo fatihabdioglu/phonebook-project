@@ -7,6 +7,7 @@ spec:
   project: default
   source:
     chart: pb-app
+    path: pb-app
     repoURL: https://github.com/fatihabdioglu/phonebook-project.git
     targetRevision: 1.16.0
     helm:
