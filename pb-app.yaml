@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: pb-app
+  namespace: argocd
+spec:
+  project: default
+  source:
+    chart: pb-app
+    repoURL: https://github.com/fatihabdioglu/phonebook-project.git
+    targetRevision: 1.16.0
+    helm:
+      releaseName: release-1
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: app
